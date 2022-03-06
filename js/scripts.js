@@ -25,12 +25,15 @@ let mesCalc = document.getElementById('mesCalc')
         let result = document.getElementById('result')
         let dataprint = document.createElement('div')
 
-        dataprint.innerHTML = '
-        <div class="container-data" row> 
-        <div class="col s4">
-            <h6>${mes}</h6>
-            
-
-        </div>
-        </div>'
     }
+
+
+
+console.log('DOM')
+
+const root = document.querySelector('#root')
+console.log(root.innerHTML);
+
+const nuevoElemento = document.createElement('li')
+nuevoElemento.innerText = ' Sin vueltas'
+root.append(nuevoElemento)
