@@ -1,0 +1,13 @@
+.navbar {
+    background-color:rgba(23, 23, 122, 0.226);
+
+}
+.title {
+ 
+}
+#root {
+    display: contents;
+    list-style: none;
+    padding: 10px;
+    margin-left: 2rem
+}
