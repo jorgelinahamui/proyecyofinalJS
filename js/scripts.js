@@ -12,12 +12,13 @@ let mesCalc = document.getElementById('mesCalc')
         let comida = document.getElementById('comida').value;
         let transporte = document.getElementById('transporte').value;
         let ocio = document.getElementById('ocio').value;
+        let otros = document.getElementById('otros').value;
 
         
-        let gastos = parseInt(comida) + parseInt(transporte) + parseInt(ocio)
+        let gastos = parseInt(comida) + parseInt(transporte) + parseInt(ocio) + parseInt(otros)
 
         let balance = presupuesto - gastos
-        console.log(mes, presupuesto, balance)
+        console.log("Fecha: "+mes+" Presupuesto: "+ presupuesto+" Balance: "+ balance)
         
 
     }
@@ -27,9 +28,20 @@ let mesCalc = document.getElementById('mesCalc')
 
     }
 
+//*Eventos
 
+  //  console.log('Evento');
+  //  const btn = document.getElementById("btnSecundario")
+    
+  //  btn.addEventListener("click", respuestaClick);
+  //  function respuestaClick() {
+  //      console.log('Agregaste un adicional')  
+  //      console.log( inp.value); 
+  //  }
+  let btn = 
+  document.getElementById("btnSecundario")
+  btn = () => {console.log("Agregaste un adicional");}
 
-console.log('DOM')
 
 const root = document.querySelector('#root')
 console.log(root.innerHTML);
