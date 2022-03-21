@@ -10,26 +10,27 @@
 </head>
 <body>
     <nav class="navbar">
-        <h2 class="title">Te ayudo a calcular tu presupuesto</h2>
-        <br>
-    <div id="root">
+      <img class="presu rounded mx-auto d-block" src="./img/presupuesto.jpg" alt="Presupuestando">
+      
+      <div id="root">
         <li> Rapido</li>
         <li> Facil</li>
         <li> Certero</li>
-    </div>
-      </nav>
-  
+      </div>
+    </nav>
+    <main>
+    <h2 class="title">Te ayudo a calcular tu presupuesto</h2>
       <div class="main">
-        <form id="mesCalc">
-          <input type="month" placeholder="Mes" id="mes" required />
-          <input type="number" placeholder="Presupuesto" id="presupuesto" required />
-          <input type="number" placeholder="Comida" id="comida" required />
-          <input type="number" placeholder="transporte" id="transporte"
+        <form id="mesCalc row gy-2 gx-3 align-items-center">
+          <input type="month" placeholder="Mes" id="mes autoSizingInput" required />
+          <input type="number" placeholder="Presupuesto" id="presupuesto autoSizingInput" required />
+          <input type="number" placeholder="Comida" id="comida autoSizingInput" required />
+          <input type="number" placeholder="transporte" id="transporte autoSizingInput"
             required
           />
           <input type="number" placeholder="Ocio" id="ocio" required />
         <div>
-        <h3>Te falto agregar algo?</h3> 
+        <h5>Te falto agregar algo?</h5> 
         </div>
         <div class="data">
             <div class="result" id="result"></div>
@@ -41,9 +42,9 @@
         <div>
             <input type="submit" value="Calculate" class="btnPrincipal" />
         </div>
-
+      </main>
     </form>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/storage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

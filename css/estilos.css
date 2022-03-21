@@ -1,13 +1,31 @@
 .navbar {
+    display: block;
+    height: 35rem;
     background-color:rgba(23, 23, 122, 0.226);
+    margin-bottom: 8px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 
 }
 .title {
- 
+
+    font-size: 1rem;
+    font-weight:bolder;
 }
 #root {
-    display: contents;
+    font-size: 3rem;
     list-style: none;
     padding: 10px;
     margin-left: 2rem
+}
+
+.presu {
+    left: 50%;
+    height: 20rem;
+    width: 22rem;
+}
+.main {
+    height: 20rem;
 }

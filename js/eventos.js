@@ -29,3 +29,6 @@ boton.addEventListener('click', () => {
  const inp = document.getElementById('entrada')
  inp.oninput = () => {console.log('Hubo cambio');
  }
+
+
+ 
