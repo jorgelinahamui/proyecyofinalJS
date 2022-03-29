@@ -1,3 +1,11 @@
+
+swal({
+    title: "Hola humano",
+    text: "Fui diseñado para ayudarte.",
+    icon: "question",
+    button: "Comencemos",
+    })
+ 
 console.log('Te voy a ayudar a calcular tu presupuesto')
 
 let mesCalc = document.getElementById('mesCalc')
@@ -41,7 +49,11 @@ let mesCalc = document.getElementById('mesCalc')
   let btn = 
   document.getElementById("btnSecundario")
   btn = () => {console.log("Agregaste un adicional");}
-
+  Toastify({
+    text: "Agregaste otro gasto",
+    duration: 3000,
+    position: "center",
+ }).showToast()
 
 const root = document.querySelector('#root')
 console.log(root.innerHTML);
@@ -49,3 +61,22 @@ console.log(root.innerHTML);
 const nuevoElemento = document.createElement('li')
 nuevoElemento.innerText = ' Sin vueltas'
 root.append(nuevoElemento)
+
+console.log('objetos');
+const producto1 = {
+    id: 1,
+    titulo: 'Gastos',
+    precio: 500000,
+}
+console.log(producto1);
+
+function Persona(nombre, edad, pais) {
+    this.name = nombre;
+    this.age= edad;
+    this.pais= pais;
+
+}
+const persona1 = new Persona ('Roberto', 25, 'Argentina')
+const persona2= new Persona ('Marta', 18, 'Chile')
+console.log(persona1);
+console.log(persona2);
